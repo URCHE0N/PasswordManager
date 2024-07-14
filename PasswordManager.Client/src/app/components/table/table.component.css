@@ -1,0 +1,46 @@
+td {
+  text-align: center;
+  background: white;
+  border: 1px solid black;
+  width: 23.8%;
+}
+
+.button-td {
+  border: 0px;
+  width: 10%;
+}
+
+input {
+  border: none;
+  color: black;
+  background: white;
+  width: 99%;
+  text-align: center;
+  cursor: default;
+  font-size: 14px;
+  outline: none;
+}
+
+button {
+  margin-left: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.edit-btn {
+  background: white;
+}
+
+.edit-btn:hover {
+  background: grey;
+  color: white;
+}
+
+.delete-btn {
+  background: grey;
+}
+
+.delete-btn:hover {
+  background: lightgray;
+  color: black;
+}

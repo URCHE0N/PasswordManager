@@ -1,0 +1,40 @@
+<div class="central-div">
+  <div id="menu" class="menu-div">
+    <input
+      id="search-input"
+      type="text"
+      placeholder="Поиск по наименованию"
+      [(ngModel)]="search"
+      appFocus
+    />
+    <button
+      id="add-btn"
+      class="add-button"
+      (click)="
+        modalService.open(); statusModalWin = 'Добавить пароль'; passwordEdit()
+      "
+    >
+      Добавить
+    </button>
+  </div>
+  <div id="table" class="table-div" align="center">
+    <table>
+      <tr>
+        <th>Наименование</th>
+        <th>Пароль</th>
+        <th>Дата</th>
+        <th class="button-th"></th>
+      </tr>
+    </table>
+    <div *ngIf="passwordService.passwords">
+      <app-table
+        *ngFor="let password of passwordService.passwords | searchName : search"
+        [password]="password"
+        (click)="statusModalWin = 'Изменить пароль'"
+      ></app-table>
+    </div>
+  </div>
+  <app-modal *ngIf="modalService.isVisible$ | async">
+    <create-or-update-modal [title]="statusModalWin"></create-or-update-modal>
+  </app-modal>
+</div>

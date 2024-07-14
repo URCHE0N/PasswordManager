@@ -1,0 +1,16 @@
+<div [id]="password.id" (click)="type = !type">
+  <td>{{ password.name }}</td>
+  <td>
+    <input
+      [type]="type ? 'text' : 'password'"
+      [value]="password.textPassword"
+      readonly
+    />
+  </td>
+  <td>
+    {{ password.dateAdd | date : "dd.MM.yyyy, h:mm" }}
+  </td>
+  <td class="button-td">
+    <button class="delete-btn" (click)="DeleteBtn(password.id)">Удалить</button>
+  </td>
+</div>
