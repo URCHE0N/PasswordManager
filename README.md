@@ -14,6 +14,6 @@
 </ul>
 <br>
 <h3>Запуск приложения:</h3>
-<p>Из папки DataBase запустить терминал с командой "docker-compose up --build" и запустить контейнер в docker, если он отключен. В папке PasswordManager.Server запустить файл с расширением .sln, строка подключения к бд находится в файле &#171appsettings.json&#187, и из Visual Studio запустить проект.
-Из папки PasswordManager.Client запустить терминал с командой "npm start" и перейти на предоставленный localhost, чтобы закрыть в том же терминале "q" + enter.</p>
+<p>Из папки DataBase запустить терминал с командой &#171docker-compose up --build&#187 и запустить контейнер в docker, если он отключен. В папке PasswordManager.Server запустить файл с расширением .sln, строка подключения к бд находится в файле &#171appsettings.json&#187, и из Visual Studio запустить проект.
+Из папки PasswordManager.Client запустить терминал с командой &#171npm start&#187 и перейти на предоставленный localhost, чтобы закрыть в том же терминале &#171q&#187 + enter.</p>
 </div>
